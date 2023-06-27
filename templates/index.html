@@ -1,0 +1,15 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Verificação de Nomes</title>
+</head>
+<body>
+    <h1>Verificação de Nomes</h1>
+    <form method="POST" action="/">
+        <input type="text" name="nome" placeholder="Digite um nome">
+        <input type="submit" value="Verificar">
+    </form>
+    {% if mensagem %}
+    <p>{{ mensagem }}</p>
+    {% endif %}
